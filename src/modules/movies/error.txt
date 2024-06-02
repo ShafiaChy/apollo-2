@@ -1,0 +1,126 @@
+
+=======Validation Error======
+  "err": {
+    "errors": {
+      "genre": {
+       
+      }
+    },
+    "name": "ValidationError",
+  },
+
+
+===CastError=====
+
+  "err": {
+    
+      "name": "ValidationError",
+  }
+
+error pattern
+
+{
+    success: false,
+    message:err.name
+    "errorSources":[
+      {
+        "path": "name",
+        "message": "Name is required",
+      }
+    ],
+    stack:"..."
+    
+    
+}
+
+
+
+{
+    "err": {
+        "errors": {
+            "genre": {
+                
+                "message": "Genre is required",
+                
+                "path": "genre",
+               
+            }
+        },
+ 
+        "name": "ValidationError",
+     
+    }
+}
+
+
+[
+  ValidatorError: Genre is required
+     
+    properties: {
+
+      message: 'Genre is required',
+      type: 'required',
+      path: 'genre',
+      value: null
+    }
+   
+  
+]
+
+
+
+
+{
+    
+    "err": {
+        "errors": {
+            "totalRating": {
+                
+              },
+           
+               
+            },
+             "name": "ValidationError",
+        },
+       
+    }
+{
+    
+    "err": {
+        "errors": {
+            "genre": {
+                
+               
+            }
+        },
+       
+        "name": "ValidationError",
+  
+    }
+}
+
+
+{
+   
+    "err": {
+      
+        "path": "_id",
+      
+        "name": "CastError",
+       
+    }
+}
+
+{
+    success: false,
+    message:err.name
+    "errorSources":[
+      {
+        "path": "name",
+        "message": "Name is required",
+      }
+    ],
+    stack:"..."
+    
+    
+}
